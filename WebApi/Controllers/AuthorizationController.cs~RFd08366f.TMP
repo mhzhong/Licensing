@@ -1,0 +1,49 @@
+﻿using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Runtime.InteropServices;
+using System.Web.Http;
+using DataAccessLayer.Interface;
+
+namespace WebApi.Controllers
+{
+    public class AuthorizationController : BaseApiController
+    {
+        public AuthorizationController(IAuthorizationRepository repo): base(repo)
+        {
+            
+        }
+
+        // GET api/Authorization
+        public HttpRequestException Get()
+        {
+            var allAuthorizaion = _theAuthorizationRepo.GetAll();
+
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        // GET api/<controller>/5
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        // POST api/<controller>
+        public void Post([FromBody]string value)
+        {
+        }
+
+        // PUT api/<controller>/5
+        public void Put(int id, [FromBody]string value)
+        {
+        }
+
+        // DELETE api/<controller>/5
+        public void Delete(int id)
+        {
+        }
+    }
+}

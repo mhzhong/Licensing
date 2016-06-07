@@ -1,0 +1,51 @@
+﻿using DataLayer.Entities;
+using DataLayer.Mappers;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer
+{
+    public partial class LicensingContext: DbContext
+    {
+        public LicensingContext() : base("LicensingConnectionString") 
+        {
+            Database.SetInitializer<LicensingContext>(new DropCreateDatabaseAlways<LicensingContext>());
+        }
+
+        public DbSet<Activation> Activations { get; set; }
+        public DbSet<Application> Applications { get; set; }
+        public DbSet<Authorization> Authorizations { get; set; }
+        public DbSet<License> Licenses { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductFamily> ProductFamilys { get; set; }
+        public DbSet<ProductType> ProductTypes { get; set; }
+        public DbSet<SoftwareVersion> SoftwareVersions { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Configurations.Add(new ActivationMapper());
+            modelBuilder.Configurations.Add(new ApplicationMapper());
+            modelBuilder.Configurations.Add(new AuthorizationMapper());
+            modelBuilder.Configurations.Add(new LicenseMapper());
+            modelBuilder.Configurations.Add(new OrderDetailMapper());
+            modelBuilder.Configurations.Add(new OrderMapper());
+            modelBuilder.Configurations.Add(new ProductFamilyMapper());
+            modelBuilder.Configurations.Add(new ProductMapper());
+            modelBuilder.Configurations.Add(new ProductTypeMapper());
+            modelBuilder.Configurations.Add(new SoftwareVersionMapper());
+            modelBuilder.Configurations.Add(new SubscriptionMapper());
+        }
+    }
+  
+}

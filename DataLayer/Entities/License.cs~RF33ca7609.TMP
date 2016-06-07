@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Entities
+{
+    public class License
+    {
+        public License()
+        {
+            //ProductFamilyId = new ProductFamily();
+            SubscriptionId = new Subscription();
+            VerionId = new SoftwareVersion();
+            ApplicationId = new Application();
+        }
+   
+        public int Id { get; set; }
+        public String Name { get; set; }
+        public String Description { get; set; }
+        public String TitleOfHardware { get; set; }
+
+        public int ProductFamilyId { get; set; }
+
+        public Enums.LicenseType LicenseType{ get; set; }
+        public int Duration { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime DateUpdated { get; set; }
+        public Subscription SubscriptionId { get; set; }
+        public SoftwareVersion VerionId { get; set; }
+        public Enums.Status Status { get; set; }
+        public Application ApplicationId { get; set; }
+
+        public ProductFamily ProdFamily { get; set; }
+    }
+}

@@ -1,0 +1,179 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects.DataClasses;
+using System.IO.Pipes;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.Remoting.Contexts;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using DataAccessLayer;
+using DataLayer;
+using DataLayer.Enums;
+using Moq;
+
+namespace BusinessLogicTest
+{
+    /// <summary>
+    /// Test behaviors of ProductType repository by mocking ProductTypeRepository interface
+    /// </summary>
+    [TestClass]
+    public class ProductTypeRepositoryTest
+    {
+        public readonly IProductTypeRepository MockProductTypeRepo;
+        public Mock<IProductTypeRepository> mockProductTypeRepo;
+
+        public readonly ILicenseRepository MockLicenseRepo;
+        public Mock<ILicenseRepository> mockLicenseRepo;
+
+        //public Mock<LicensingContext> mockContext;
+        //public Mock<DbSet<ProductType>> mockSet;
+        
+        //Constructor
+        public ProductTypeRepositoryTest()
+        {           
+            //mock data for productType entity
+             IList<ProductType> types = new List<ProductType>()
+            {
+                new ProductType{ Id = 1, Type = "BVMS"},
+                new ProductType{ Id = 2, Type = "CDR"}
+            };
+
+            
+                //initial the mock product type repository using Moq
+            mockProductTypeRepo = new Mock<IProductTypeRepository>();
+            //access mock instance
+            this.MockProductTypeRepo = mockProductTypeRepo.Object;
+            //set up GetAll method
+            mockProductTypeRepo.Setup(mp => mp.GetAll()).Returns(types.AsQueryable());
+            //set up GetById method
+            mockProductTypeRepo.Setup(mp => mp.GetById(It.IsAny<int>())).Returns((int i) => types.Where(x => x.Id == i).Single());
+            //set up create method
+            mockProductTypeRepo.Setup(mp => mp.Insert(It.IsAny<ProductType>())).Returns(true);
+            
+
+            //mock data for license entity
+            IList<License> ListOfMatchinglicenses = new List<License>()
+            {
+                new License { Id = 1, Name = "BVMS Lite-64 edition v2.0", Description = "this is a test.", TitleOfHardware = "Computer Signature", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.IsValid, ProdFamilyId = 1, SubscriptionId = 1, VersionId = 1, ApplicationId = 1, ProductTypeId = 1},
+                new License { Id = 2, Name = "BVMS 2 Camera Extension", Description = "test test test.", TitleOfHardware = "Computer Signature", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.Invalid, ProdFamilyId = 1, SubscriptionId = 1, VersionId = 2, ApplicationId = 1, ProductTypeId = 1},
+                new License { Id = 3, Name = "CDR V3.6, 1 Year Subscription", Description = "this is for VLMS.", TitleOfHardware = "CDR Vehicle Interface Module", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.IsValid, ProdFamilyId = 10, SubscriptionId = 1, VersionId = 6, ApplicationId = 2, ProductTypeId = 2}
+            };
+
+            
+
+
+                //initial the mock license repository
+            mockLicenseRepo = new Mock<ILicenseRepository>();
+            //access the mock instance
+            this.MockLicenseRepo = mockLicenseRepo.Object;
+            //set up GetLicensesByProductTypeId
+            //mockLicenseRepo.Setup(m => m.GetLicensesByProductTypeId(It.IsAny<int>())).Returns(licenses);
+            mockLicenseRepo.Setup(m => m.GetLicensesByProductTypeId(It.IsAny<int>()
+                )).Returns(new Func<License,bool>(x=>x.));
+        }
+
+        /// <summary>
+        /// Test behavior of ProductType repository
+        /// </summary>
+        [TestMethod]
+        public void Can_CreateProductType()
+        {
+
+            var newType = new ProductType() { Id = 3, Type = "ABC" };
+            bool id = MockProductTypeRepo.Insert(newType);
+            Assert.AreEqual(true, id);
+
+        }
+
+        [TestMethod]
+        public void Can_GetProductTypeById_ReturnProductType()
+        {
+            ProductType testProductType = this.MockProductTypeRepo.GetById(2);
+
+            Assert.IsNotNull(testProductType);
+            Assert.IsInstanceOfType(testProductType, typeof(ProductType));
+            Assert.AreEqual("CDR", testProductType.Type);
+        }
+
+        [TestMethod]
+        public void Check_Moq()
+        {
+            // Create Moq
+            Mock<IProductTypeRepository> mockProductTypeRepo = new Mock<IProductTypeRepository>();
+
+            // Setup
+            mockProductTypeRepo.Setup(x => x.Insert(new ProductType())).Returns(true);
+
+            mockProductTypeRepo.Verify();
+        }
+
+
+            
+            //Mock<IGenericRepository<ProductType>> mockService = new Mock<IGenericRepository<ProductType>>();
+
+            //mock licensing context
+            //mockContext = new Mock<LicensingContext>();
+
+            //mock DbSet ProductType
+            //mockSet = new Mock<DbSet<ProductType>>();
+
+            // var service = new mockService(mockContext.Object);
+
+            //Set up
+            //mockContext.Setup(m => m.ProductTypes).Returns(mockSet.Object);
+
+
+            //var service = new IGenericRepository<mockContext.Object>();
+
+            //return product type by id
+
+
+            //mockProductTypeRepo.Setup(mp => mp.Insert(It.IsAny<ProductType>())).Returns(
+            //    (ProductType target) =>
+            //    {
+            //        if (target.Id.Equals(default(int)))
+            //        {
+            //            target.Id = types.Count() + 1;
+            //            target.Type = "VCI";
+            //            types.Insert(target);
+            //        }
+            //        else
+            //        {
+            //            var original = types.Where(q => q.Id == target.Id).Single();
+
+            //            if (original == null)
+            //            {
+            //                return false;
+            //            }
+
+            //            original.Type = target.Type;
+            //        }
+            //        return true;
+            //    }
+
+            //    );
+
+
+
+        [TestMethod]
+        public void Can_GetLicensesByProductTypeId()
+        {
+            //set up
+          
+            IList<License> testLicenses = this.MockLicenseRepo.GetLicensesByProductTypeId(1).ToList(); 
+            
+            Assert.IsNotNull(testLicenses);
+            //Assert.IsInstanceOfType(testLicenses,typeof(License));
+            //Assert.AreEqual(1, testLicenses.Count);
+            Assert.AreEqual(1,testLicenses.Count);
+
+        }
+    }
+}

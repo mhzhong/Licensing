@@ -1,0 +1,19 @@
+﻿using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer.Interface
+{
+    public interface ILicenseRepository : IGenericRepository<License>
+    {
+        //void Insert(License license);
+        //IEnumerable<License> GetAllLicenses();
+        License GetLicenseById(int id);
+        IEnumerable<License> GetLicensesByProductTypeId(int id);       
+        void Update(License license);
+
+    }
+}

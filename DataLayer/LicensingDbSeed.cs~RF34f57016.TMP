@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer
+{
+    class LicensingDbSeed
+    {
+        LicensingContext _ctx;
+
+        public LicensingDbSeed(LicensingContext ctx)
+        {
+            _ctx = ctx;
+        }
+
+        public void seed()
+        {
+ 
+        }
+
+        static string[] License = 
+        {
+            "BVMS Lite-64 edition v2.0, test, Computer Signature, 1, Subscription, 1, , , 1, 2, Active, 1"
+        };
+
+        static string[] Subscription = 
+        {
+            "1 year, , ,"
+        };
+
+        static string[] ProductFamily = 
+        { 
+            "01002624","MTS3100 Mastertech Domestic"," "," "
+        };
+
+
+
+        static string[] Version =
+        {
+            "1.0, version 1.0, ,"
+        }; 
+
+        static string[] ProductType =
+        {
+            "BVMS"
+        };
+
+        static string[] Authorization =
+        {
+            "4352 6802 4015 9384", Enums.Status.Authorized.ToString(),"3"," ","1"
+        };
+
+        static string[] Activation =
+        {
+            "D41A91DB6285B0048F923C00C1F4754FFD42D257",Enums.Status.IsValid.ToString(),"0010c634bd20 000d56e76ef2", " ", " ", "2016-2-20", "2017-1-20","1"
+        };
+
+
+    }
+}

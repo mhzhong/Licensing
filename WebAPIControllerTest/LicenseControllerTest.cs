@@ -1,0 +1,126 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using WebApi.Controllers;
+using System.Web.Http;
+using DataAccessLayer;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using Moq;
+using NUnit.Framework;
+
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// NUnit test cases for LicenseControllerTest
+    /// </summary>
+    [TestFixture]
+    public class LicenseControllerTest
+    {
+        private LicenseController _licenseController;
+        private ILicenseRepository _licenserepository;
+
+        private readonly ILicenseRepository MockLicenseRepo;
+        private Mock<ILicenseRepository> mockLicenseRepo; 
+
+
+        private int count;
+        private int licenseId;
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        //public LicenseControllerTest()
+        //{
+        //    MockLicenseRepo = mockLicenseRepo.Object;
+        //}
+
+        [SetUp]
+        public void Setup()
+        {
+            //Create an instance of licenseRepository
+            //_licenserepository = new LicenseRepository(LicensingContext ctx);
+
+            //Create an instance of licenseController
+           // _licenseController = new LicenseController(_licenserepository);
+
+            //Number of records
+            //count = _licenseController.Get().Count();
+
+            mockLicenseRepo = new Mock<ILicenseRepository>();
+
+            //set up for POST
+            mockLicenseRepo.Setup(ml => ml.Insert(It.IsAny<License>())).Returns(true);
+
+        }
+
+        [Test]
+        public void GetAllLicenseTest()
+        {
+            Assert.AreEqual(4, count);
+        }
+
+        [Test]
+        public void GetSingleLicenseTest()
+        {
+            var response = _licenseController.Get(2);
+
+            License license;
+            Assert.IsTrue(response.TryGetContentValue<License>(out license));
+            Assert.AreEqual(2, license.Id);
+        }
+
+        [Test]
+        public void PostNewLicenseTest()
+        {
+            var lic = new License
+            {
+                Id = 5,
+                Name = "VCI ALL - 2 Year",
+                Description = "VCI ALL - 2 Year",
+                TitleOfHardware = "M-VCI",
+                LicenseType = DataLayer.Enums.LicenseType.Subscription,
+                Duration = 2,
+                DateCreated = DateTime.Now,
+                DateUpdated = DateTime.Now,
+                Status = DataLayer.Enums.Status.Valid,
+                ProdFamilyId = 6,
+                SubscriptionId = 2,
+                VersionId = 10,
+                ApplicationId = 2,
+                ProductTypeId = 7
+            };
+            
+            var controller = new LicenseController(MockLicenseRepo);
+
+            var result = controller.Post(lic);
+
+            Assert.AreEqual(HttpStatusCode.Created, result.StatusCode);
+        }
+    }
+}

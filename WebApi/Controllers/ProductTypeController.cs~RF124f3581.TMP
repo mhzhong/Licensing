@@ -1,0 +1,160 @@
+﻿using DataAccessLayer.Interface;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using DataAccessLayer;
+using DataLayer.Entities;
+using WebApi.Models;
+
+namespace WebApi.Controllers
+{
+    public class ProductTypeController : BaseApiController //ApiController
+    {
+        private ProductTypeModel _productTypeRepo;
+
+        /// <summary>
+        /// Public constructor to initialize ProductType repository instance
+        /// </summary>
+        public ProductTypeController(IProductTypeRepository repo): base(repo)
+        {
+            
+        }
+
+        //public ProductTypeController(IProductTypeRepository prodTypeRepo, ProductTypeModel productTypeModel)
+        //{
+        //    _prodTypeRepo = prodTypeRepo;
+        //    _productTypeRepo = productTypeModel;
+        //}
+
+        // GET api/ProductType
+        public HttpResponseMessage Get()
+        {
+            var allProductType = _theProductTypeRepo.GetAll();
+            return Request.CreateResponse(HttpStatusCode.OK, allProductType);
+
+        }
+
+        // GET api/ProductType/2
+        public HttpResponseMessage Get(int id)
+        {
+            var type = _theProductTypeRepo.GetById(id);
+
+            try
+            {
+                if (type == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, type);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+            
+        }
+
+        // POST api/ProductType
+        public HttpResponseMessage Post([FromBody] ProductType productType)
+        {
+            try
+            {
+                _theProductTypeRepo.Insert(productType);
+                return Request.CreateResponse(HttpStatusCode.Created, TheModelFactory.Create(productType));
+            }
+            catch (Exception ex)
+            {
+
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+                      
+        }
+
+        // PUT api/ProductType
+        public HttpResponseMessage Put(int id, [FromBody] ProductType productType)
+        {
+            try
+            {
+                var targetType = _theProductTypeRepo.GetById(id);
+                if (targetType != null && targetType.Id == id)
+                {
+                    //productType.Id = targetType.Id;
+                    targetType.Type = productType.Type;
+
+                    _theProductTypeRepo.Update(productType);
+                    return Request.CreateResponse(HttpStatusCode.OK, TheModelFactory.Create(productType));
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotModified, "Not found the product type.");
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+            
+        }
+
+        //public HttpResponseMessage Delete(int id)
+        //{
+        //    try
+        //    {
+        //        var lincense = _prodTypeRepo.
+        //        var type = _prodTypeRepo.GetById(id);
+
+        //        if (type == null)
+        //        {
+        //            return Request.CreateResponse(HttpStatusCode.NotFound);
+        //        }
+
+        //    }
+        //    catch (Exception)
+        //    {
+                
+        //        throw;
+        //    }
+        //}
+
+        public HttpResponseMessage Delete(int id)
+        {
+            try
+            {
+                var type = _theProductTypeRepo.GetById(id);
+
+                if (type == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                if (type.Licenses.Count > 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest,
+                        "Can not delete the product type, because there are licenses corresponding it.");
+                }
+                else
+                {
+                    _theProductTypeRepo.Delete(type);
+                    return Request.CreateResponse(HttpStatusCode.OK);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,186 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+
+    public class LicenseRepository : GenericRepository<LicensingContext, License>, ILicenseRepository
+    {
+        IEnumerable<License> _license { get; set; }
+
+        
+
+        public virtual IEnumerable<License> GetLicensesByProductTypeId(int id)
+        {
+            
+            var query = Context.Licenses.Include("ProductType").Where(x => x.ProductTypeId == id).AsEnumerable();
+
+            return query;
+        }
+
+        public new IEnumerable<DataLayer.Entities.License> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public new DataLayer.Entities.License GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Insert(DataLayer.Entities.License entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(DataLayer.Entities.License entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(DataLayer.Entities.License entity)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+
+       
+    //    private LicensingContext _ctx;
+
+    //    public LicenseRepository(LicensingContext ctx)
+    //    {
+    //        _ctx = ctx;
+    //    }
+
+    //    public void Insert(License license)
+    //    {
+    //        _ctx.Set<License>().Add(license);
+    //    }
+
+    //    public IEnumerable<License> GetAllLicenses()
+    //    {
+    //        //return _ctx.Licenses.Cast(IEnumerable<License>);
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public License GetLicenseById(int id)
+    //    {
+    //        //var license = _ctx.Licenses
+    //        //            .Include("ProductFamily")
+    //        //            .Include("Subscription")
+    //        //            .Include("SoftwareVersion")
+    //        //            .Include("Application")
+    //        //            .Include("ProductType")
+    //        //            .Include("Authorization")
+    //        //            .Where(x => x.Id == id)
+    //        //            .SingleOrDefault();
+    //        //return license;
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public IEnumerable<DataLayer.Entities.License> GetLicensesByProductTypeId(int id)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Update(DataLayer.Entities.License license)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+
+
+
+
+    //public class LicenseRepository : ILicenseRepository
+    //{
+        
+
+    //    public IEnumerable<DataLayer.Entities.License> GetAllLicense()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public DataLayer.Entities.License GetLicenseById(int id)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public IEnumerable<DataLayer.Entities.License> GetLicenseByProductTypeId(int id)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Insert(DataLayer.Entities.License license)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Update(DataLayer.Entities.License license)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+    //public class LicenseRepository: GenericRepository<LicensingContext,License>, ILicenseRepository
+    //{
+    //    //public LicenseRepository(LicenseContext)
+    //    //{
+    //    //     context = new LicenseContext();
+    //    //}
+
+    //    public License GetLicenseById(int id)
+    //    {
+    //        return _entities.Find(id);
+           
+    //    }
+
+    //    public IEnumerable<DataLayer.Entities.License> GetLicenseByProductTypeId(int id)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public IEnumerable<License> GetAll()
+    //    {
+    //        return ToList();
+    //    }
+
+    //    public new DataLayer.Entities.License Get(int id)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public IEnumerable<DataLayer.Entities.License> FindBy(System.Linq.Expressions.Expression<Func<DataLayer.Entities.License, bool>> predicate)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Add(License obj)
+    //    {
+    //        Add(obj);
+    //    }
+
+    //    public void AddRange(IEnumerable<DataLayer.Entities.License> entity)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Delete(DataLayer.Entities.License entity)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void DeleteRange(IEnumerable<DataLayer.Entities.License> entity)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+}

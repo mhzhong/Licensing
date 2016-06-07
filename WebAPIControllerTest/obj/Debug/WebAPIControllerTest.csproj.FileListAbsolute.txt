@@ -1,0 +1,107 @@
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll.config
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataLayer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Moq.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApi.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Optimization.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebActivatorEx.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApiContrib.IoC.Ninject.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataLayer.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApi.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Moq.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.csprojResolveAssemblyReference.cache
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll.config
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataLayer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Moq.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApi.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Optimization.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebActivatorEx.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApiContrib.IoC.Ninject.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\DataLayer.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\WebApi.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Moq.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Ninject.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.csprojResolveAssemblyReference.cache
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll.config
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebAPIControllerTest.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\DataLayer.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Moq.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebApi.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\System.Web.Optimization.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Ninject.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebActivatorEx.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebApiContrib.IoC.Ninject.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\DataAccessLayer.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\DataLayer.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\WebApi.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\EntityFramework.SqlServer.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Moq.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\nunit.framework.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Ninject.Web.Common.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Ninject.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\System.Web.Http.Tracing.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\Newtonsoft.Json.xml
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.csprojResolveAssemblyReference.cache
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\obj\Debug\WebAPIControllerTest.pdb
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\System.Web.Mvc.dll
+F:\SouceCode\Licensing\Licensing\WebAPIControllerTest\bin\Debug\System.Web.Mvc.xml

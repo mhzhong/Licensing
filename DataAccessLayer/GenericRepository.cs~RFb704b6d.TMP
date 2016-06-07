@@ -1,0 +1,143 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using System.Data.Entity;
+using System.Linq.Expressions;
+using DataLayer;
+
+namespace DataAccessLayer
+{
+ //   public class GenericRpository<T> : IGenericRepository<T> where T:class
+ //   {
+ //       private readonly LicensingContext _dbContext;
+
+ //       public GenericRpository(LicensingContext dbContext)
+ //       {
+ //           _dbContext = dbContext;
+ //       }
+
+ //       public IEnumerable<T> GetAll()
+ //       {
+ //           return _dbContext.Set<T>().AsEnumerable();
+ //       }
+
+ //       public T GetById(int id)
+ //       {
+ //           return _dbContext.Set<T>().Find(id);
+ //       }
+
+ //       public bool Insert(T entity)
+ //       {
+ //           try
+ //           {
+ //               _dbContext.Set<T>().Add(entity);
+ //               Save();
+ //               return true;
+ //           }
+ //           catch
+ //           {
+
+ //               return false;
+ //           }
+           
+ //       }
+
+ //       public bool Update(T entity)
+ //       {
+ //           _dbContext.Entry(entity).State = EntityState.Modified;
+ //           Save();
+ //           return true;
+ //       }
+
+ //       public bool Save()
+ //       {
+ //           _dbContext.SaveChanges();
+ //           return true;
+ //       }
+ //   }
+ //}
+
+    public class GenericRepository<C, T> : IGenericRepository<T>
+        where T : class , new()
+        where C : LicensingContext, new()
+    {
+
+
+        private C _entities = new C();
+
+        protected C Context
+        {
+            get { return _entities; }
+            set { _entities = value; }
+        }
+
+        public GenericRepository()
+        {
+            T t = new T();
+            C c = new C();
+        }
+
+        public virtual IEnumerable<T> GetAll()
+        {
+            IEnumerable<T> query = Context.Set<T>().ToList();
+            return query;
+        }
+
+        public virtual T GetById(int id)
+        {
+            T query = Context.Set<T>().Find(id);
+            return query;
+        }
+
+        public IEnumerable<T> GetBy(Expression<Func<T, bool>> predicate)
+        {
+            IEnumerable<T> query = Context.Set<T>().Where(predicate);
+            return query;
+        }
+
+        public bool Insert(T entity)
+        {
+            try
+            {
+                Context.Set<T>().Add(entity);
+                Context.SaveChanges();
+
+                return true;
+            }
+            catch
+            {
+                
+                return false;
+            }
+            
+        }
+
+
+        //public bool Delete(T entity)
+        //{
+
+        //    Context.Set<T>().Remove(entity);
+        //    Context.SaveChanges();
+
+        //    return true;
+        //}
+
+        public bool Update(T entity)
+        {
+            Context.Entry(entity).State = EntityState.Modified;
+            Context.SaveChanges();
+
+            return true;
+        }
+
+
+        public bool Save()
+        {
+            Context.SaveChanges();
+        }
+    }
+}

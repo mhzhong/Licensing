@@ -1,0 +1,57 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// Summary description for MockRepository
+    /// </summary>
+   
+    public class MockRepository<T> :IGenericRepository<T>
+        where T: class
+    {
+            public List<T> _context; 
+
+            public MockRepository(List<T> ctx )
+            {
+                _context = ctx;
+            }
+
+            public virtual IEnumerable<T> GetAll()
+            {
+                return _context.AsQueryable();
+            }
+
+            public virtual T GetById(int id)
+            {
+                //return _context.Find(Predicate<T>);
+                throw new NotImplementedException();
+            }
+
+            public virtual bool Insert(T entity)
+            {
+                _context.Add(entity);
+                return true;
+            }
+
+            public virtual bool Delete(T entity)
+            {
+                _context.Remove(entity);
+                return true;
+            }
+
+            public virtual bool Update(T entity)
+            {
+                var entry = _context.Where(s => s == entity).SingleOrDefault();
+                entry = entity;
+                return true;
+            }
+        }
+}

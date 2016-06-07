@@ -1,0 +1,100 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using DataAccessLayer.Interface;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// Summary description for MockRepository
+    /// </summary>
+    [TestClass]
+    public class MockRepository<T> :IGenericRepository<T> where T: class
+    {
+        public List<T> _context; 
+
+        public MockRepository(List<T> ctx )
+        {
+            _context = ctx;
+        }
+
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        [TestMethod]
+        public void TestMethod1()
+        {
+            //
+            // TODO: Add test logic here
+            //
+        }
+
+        public virtual IEnumerable<T> GetAll()
+        {
+            return _context.AsQueryable();
+        }
+
+        public virtual T GetById(int id)
+        {
+            //return _context.Find(Predicate<T>);
+            throw new NotImplementedException();
+        }
+
+        public virtual bool Insert(T entity)
+        {
+            _context.Add(entity);
+            return true;
+        }
+
+        public virtual bool Delete(T entity)
+        {
+            _context.Remove(entity);
+            return true;
+        }
+
+        public bool Update(T entity)
+        {
+            var entry = _context.Where(s => s == entity).SingleOrDefault();
+            entry = entity;
+        }
+    }
+}

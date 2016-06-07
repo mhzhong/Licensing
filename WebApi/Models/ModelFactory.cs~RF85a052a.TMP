@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http.Routing;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+
+namespace WebApi.Models
+{
+    public class ModelFactory
+    {
+        private UrlHelper _urlHelper;
+        private ILicenseRepository _ilicenseRepo;
+
+        public ModelFactory(HttpRequestMessage request, ILicenseRepository repo )
+        {
+            _ilicenseRepo = repo;
+            _urlHelper = new UrlHelper(request);
+
+        }
+
+        public LicenseModel Create(License license)
+        {
+            return new LicenseModel()
+            {
+                //Id = license.Id,
+                Name = license.Name,
+                Description = license.Description,
+                TitleOfHardware = license.TitleOfHardware,
+                LicenseType = license.LicenseType,
+                Duration = license.Duration,
+                DateCreated = license.DateCreated,
+                DateUpdated = DateTime.Now,
+                Status = license.Status
+                
+            };
+        }
+    }
+}

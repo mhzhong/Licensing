@@ -1,0 +1,132 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using DataAccessLayer;
+using DataLayer;
+using Moq;
+
+namespace BusinessLogicTest
+{
+    /// <summary>
+    /// Summary description for ProductTypeServiceTest
+    /// </summary>
+    [TestClass]
+    public class ProductTypeServiceTest
+    {
+       //set up testing data
+        private string[] license = new[]
+        {
+            "BVMS Lite-64 edition v2.0, test, Computer Signature, 1, Subscription, 1, , , 1, 2, Active, 1",
+            "CDR v5.0, test, CDR Vehicle, 1, Subscription, 1, , , 1, 2, Active, 1"
+        }; 
+
+        [TestMethod]
+        public void CreateProductTypeTest()
+        {
+            Mock<IProductTypeRepository> objProdTypeRepo = new Mock<IProductTypeRepository>();
+            objProdTypeRepo.Setup(x => x.Insert(It.IsAny<ProductType>())).Returns(true);
+                       
+            var obj = new ProductType()
+            {
+                Id = 1,
+                Type = "BVMS"
+            };
+
+            bool id = objProdTypeRepo.Object.Insert(obj);
+
+            Assert.AreEqual(true, id);
+                       
+        }
+
+        [TestMethod]
+        public void GetProductTypeByIdTest()
+        {
+            Mock<IProductTypeRepository> objProdTypeRepo = new Mock<IProductTypeRepository>();
+            objProdTypeRepo.Setup(x => x.GetProductTypeById(It.IsAny<ProductType>())).Returns(true);
+            objProdTypeRepo.Object.GetProductTypeById();
+        }
+
+
+        //private IProductTypeRepository prodTypeRepoMock;
+        //private LicensingContext ctx;
+
+        //private ProductType typeOne = new ProductType()
+        //{
+        //    Id = 1,
+        //    Type = "BVMS"
+        //};
+
+        //private List<ProductType> prodTypeList = new List<ProductType>();
+
+       
+        //[TestInitialize]
+        //public void Initialize()
+        //{
+        //   prodTypeRepoMock = new ProductTypeRepository();
+           
+        //   ctx = new LicensingContext();
+
+        //   prodTypeList.Add(typeOne);
+        //   prodTypeRepoMock = new ProductTypeRepository(typeof(IProductTypeRepository));
+        //}
+
+
+        
+
+        //#region Additional test attributes
+        ////
+        //// You can use the following additional attributes as you write your tests:
+        ////
+        //// Use ClassInitialize to run code before running the first test in the class
+        //// [ClassInitialize()]
+        //// public static void MyClassInitialize(TestContext testContext) { }
+        ////
+        //// Use ClassCleanup to run code after all tests in a class have run
+        //// [ClassCleanup()]
+        //// public static void MyClassCleanup() { }
+        ////
+        //// Use TestInitialize to run code before running each test 
+        //// [TestInitialize()]
+        //// public void MyTestInitialize() { }
+        ////
+        //// Use TestCleanup to run code after each test has run
+        //// [TestCleanup()]
+        //// public void MyTestCleanup() { }
+        ////
+        //#endregion
+
+        //[TestMethod]
+        //public void TestGetAllProductType()
+        //{
+        //    ProductTypeRepository prodTypeRepo = new ProductTypeRepository((IProductTypeRepository)prodTypeRepoMock.MockInstance);
+        //    ;
+        //}
+        
+        //[TestMethod]
+        //public void Get_SingleProductType_IsNullAnException()
+        //{
+        //    var product = prodTypeRepoMock.GetProductTypeById(1);
+        //    Assert.AreEqual(product.Type, "CDR");
+
+        //}
+
+        //[TestMethod]
+        //public void Add_ProductType_IsNullAnException()
+        //{
+        //    Mock<ProductType> objProdType = new Mock<ProductType>();
+
+            //objProdType.Setup(x=>x.)
+            //var type = new ProductType()
+            //{
+            //    Id = 1,
+            //    Type = "CDR"
+            //};
+
+            //prodTypeRepo.Insert(type);
+            //Assert.AreNotEqual(null, "CDR");
+        //}
+    }
+}

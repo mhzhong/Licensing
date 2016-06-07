@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using DataAccessLayer.Interface;
+using WebApi.Models;
+
+namespace WebApi.Controllers
+{
+    public class BaseApiController : ApiController
+    {
+        public ILicenseRepository _theLicenseRepo;
+        public IProductTypeRepository _theProductTypeRepo;
+
+        public ModelFactory _modelFactory;
+
+              
+        public BaseApiController(ILicenseRepository licenseRepo)
+        {
+            _theLicenseRepo = licenseRepo;
+        }
+
+        public BaseApiController(IProductTypeRepository productTypeRepo)
+        {
+            _theProductTypeRepo = productTypeRepo;
+        }
+
+        public ILicenseRepository TheLicenseRepo
+        {
+            get { return _theLicenseRepo; }
+
+        }
+
+        public IProductTypeRepository TheProductTypeRepo
+        {
+            get { return _theProductTypeRepo; }
+        }
+
+        public ModelFactory TheModelFactory
+        {
+            get
+            {
+                if (_modelFactory == null)
+                {
+                    _modelFactory = new ModelFactory(Request, TheLicenseRepo);
+                }
+                return _theLicenseRepo;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Mvc;
+using AutoMapper;
+using DataAccessLayer.Interface;
+
+namespace WebApi.Controllers
+{
+    public class ProductFamilyController : BaseApiController
+    {
+        public ProductFamilyController(IProductFamilyRepository repo): base (repo)
+        {
+            
+        } 
+        
+        // GET: api/ProductFamily
+        public HttpResponseMessage Get()
+        {
+            var allProdFamily = _theProductFamilyRepo.GetAll();
+            return Request.CreateResponse(HttpStatusCode.OK, allProdFamily);
+        }
+
+    }
+}

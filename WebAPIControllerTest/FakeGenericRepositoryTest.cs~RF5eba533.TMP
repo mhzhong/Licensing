@@ -1,0 +1,235 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using DataAccessLayer;
+using DataAccessLayer.Interface;
+using DataLayer;
+using Moq;
+using Moq.Protected;
+using NUnit.Framework;
+using System.Linq.Expressions;
+using DataLayer.Entities;
+using NUnit.Framework.Constraints;
+using TestContext = NUnit.Framework.TestContext;
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// Summary description for FakeGenericRepositoryTest
+    /// </summary>
+    [TestFixture]
+    //class FakeGenericRepositoryTest<FC, FE>
+    //    where FE : Mock<DbSet<FE>>
+    //    where FC : Mock<LicensingContext>, new()
+    //{
+    //    private FC fakeEntity = new FC();
+
+    //    protected FC fakeContext
+    //    {
+    //        get { return fakeEntity; }
+    //        set { fakeEntity = value; }
+    //    }
+
+    //    public virtual IEnumerable<FE> GetAll()
+    //    {
+    //        IEnumerable<FE> query = fakeEntity.Set<FE>().ToList();
+    //        return query;
+    //    }
+
+    //    public virtual FE GetById(int id)
+    //    {
+    //        FE query = fakeContext.Set<FE>().Find(id);
+    //        return query;
+    //    }
+
+    //    public IEnumerable<FE> GetBy(Expression<Func<FE, bool>> predicate)
+    //    {
+    //        IEnumerable<FE> query = fakeEntity.Set<FE>().Where(predicate);
+    //        return query;
+    //    }
+
+    //    public bool Insert(FE entity)
+    //    {
+
+    //        fakeEntity.Set<FE>().Add(entity);
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+
+    //    public bool Delete(FE entity)
+    //    {
+
+    //        fakeEntity.Set<FE>().Remove(entity);
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+    //    public bool Update(FE entity)
+    //    {
+    //        fakeEntity.Entry(entity).State = EntityState.Modified;
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+    //}
+
+
+    
+
+        
+    public class FakeGenericRepositoryTest
+    {
+        private IGenericRepository<TE> CreateRepository<TE>(List<TE> data)
+        where TE : Mock<DbSet<TE>>
+        {
+            int addCount = 0;
+            var mock = new Mock<IGenericRepository<TE>>();
+            //var mockContext = new Mock<LicensingContext>();
+            //var mock = new Mock<IGenericRepository<TE>>();
+            //TE = new Mock<DbSet<ProductType>>();
+            //mockContext.Setup(m=>m.ProductTypes).Returns()
+            // all the mocking setup goes here ...
+
+            mock.Setup(x => x.Insert(It.IsAny<TE>()))
+                .Callback(()=> addCount++
+                );
+
+            return mock.Object;
+        }
+
+        private ProductType type = new ProductType()
+        {
+            Type = "BVMS Test",
+            Licenses = new List<License>()
+                {
+                    new License()
+                    {
+                        Name = "VCI ALL - 1 Year",
+                        Description = "VCI ALL - 1 Year Test",
+                        TitleOfHardware = "M-VCI",
+                        LicenseType = LicenseType.Subscription,
+                        Duration = 1,
+                        DateCreated = DateTime.Now,
+                        DateUpdated = DateTime.Now,
+                        Status = Status.Valid,
+                        ProdFamilyId = 7,
+                        SubscriptionId = 1,
+                        VersionId = 2,
+                        ApplicationId = 2,
+                        //Authorizations = new List<Authorization>()
+                        //{
+                        //    new Authorization()
+                        //    {
+                        //        Key = "5055 2956 5484 9685",
+                        //        Status = Status.Authorized,
+                        //        Quantity = 1,
+                        //        DateCreated = DateTime.Now,
+                        //    },
+                        //    new Authorization()
+                        //    {
+                        //        Key = "6339 0924 3636 2969",
+                        //        Status = Status.Authorized,
+                        //        Quantity = 1,
+                        //        DateCreated = DateTime.Now,
+                        //    },
+                        //    new Authorization()
+                        //    {
+                        //        Key = "3334 6879 1616 5989",
+                        //        Status = Status.Authorized,
+                        //        Quantity = 1,
+                        //        DateCreated = DateTime.Now,
+                        //    }
+                        //}
+
+                    }
+                }
+        };
+
+        private ProductTypeRepository CreateRepository()
+        {
+            IGenericRepository<ProductType> repo = CreateRepository<ProductType>(_fakedata);
+            PersonController target = new PersonController(repo);
+            return target;
+        }
+
+        //private GenericRepository<TK, TE> CreateRepository<TK, TE>(List<TE> data)
+        //    where TE : Mock<DbSet<TE>>
+        //    where TK : Mock<LicensingContext>, new()
+        //        {
+        //            TK _entities = new TK();
+
+        //            var mock = new Mock<GenericRepository<TK, TE>>();
+
+        //            // all the mocking setup goes here ...
+        //            TE = new Mock<DbSet<ProductType>>();
+        //            TK = new Mock<LicensingContext>();
+
+        //            return mock.Object;
+        //        }
+
+        //private Mock<DbSet<ProductType>> TE;
+        //private Mock<LicensingContext> TK;
+
+        public FakeGenericRepositoryTest()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        [Test]
+        public void Can_Insert_ProductType_Test()
+        {
+            var fakeCon = new Mock<LicensingContext>();
+            var theProductTypeRepo = new GenericRepository<>();
+            theProductTypeRepo.Insert();
+        }
+
+    }
+}

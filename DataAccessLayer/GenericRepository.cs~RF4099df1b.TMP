@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using System.Data.Entity;
+using System.Linq.Expressions;
+using DataLayer;
+
+namespace DataAccessLayer
+{
+    //public class GenericRepository<T> : IGenericRepository<T>
+    //{
+    //    private LicensingContext _ctx;
+
+    //    public GenericRepository(LicensingContext ctx)
+    //    {
+    //        _ctx = ctx;
+    //    }
+
+    //    public IEnumerable<License> 
+    //}
+
+
+
+
+    public abstract class GenericRepository<C, T> : IGenericRepository<T>
+        where T : class
+        where C : LicensingContext, new()
+        {
+        private C _context = new C();
+        protected C Context
+        {
+            get { return _context; }
+            set { _context = value; }
+        }
+
+        public IEnumerable<T> GetAll()
+        {
+            IEnumerable<T> query = Context.Set<T>().ToList();
+            return query;
+        }
+
+        public T Get(int id)
+        {
+            T query = Context.Set<T>().Find(id);
+            return query;
+        }
+
+        public IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate)
+        {
+            IEnumerable<T> query = Context.Set<T>().Where(predicate);
+            return query;
+        }
+
+        public void Add(T entity)
+        {
+            Context.Set<T>().Add(entity);
+        }
+
+        public void AddRange(IEnumerable<T> entities)
+        {
+            Context.Set<T>().AddRange(entities);
+        }
+
+        public void Delete(T entity)
+        {
+            Context.Set<T>().Remove(entity);
+        }
+
+        public void DeleteRange(IEnumerable<T> entities)
+        {
+            Context.Set<T>().RemoveRange(entities);
+        }
+
+        public void Dispose()
+        {
+            if (Context != null) Context.Dispose();
+        }
+    }
+}

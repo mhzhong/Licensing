@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Entities
+{
+    public class Activation
+    {
+        public Activation()
+        {
+            AuthorizationId = new Authorization();
+
+        }
+        public int Id { get; set; }
+
+        public Authorization AuthorizationId { get; set; }
+        public int ActivationKey { get; set; }
+        public Enums.Status Status { get; set; }
+        public String MachineIdentifier { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime DateUpdated { get; set; }
+        public DateTime BegEffDate { get; set; }
+        public DateTime EndEffDate { get; set; }
+
+    }
+}

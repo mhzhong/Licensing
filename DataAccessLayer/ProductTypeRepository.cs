@@ -1,0 +1,84 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+    public class ProductTypeRepository : GenericRepository<ProductType>, IProductTypeRepository
+    {
+        private LicensingContext _context;
+
+        public ProductTypeRepository(LicensingContext context)
+            : base(context)
+        {
+            _context = context;
+        }
+
+        public LicensingContext Context
+        {
+            set { _context = value; }
+        }
+
+        public bool Update(ProductType entity)
+        {
+            try
+            {
+                _context.Entry(entity).State = EntityState.Modified;
+                _context.ProductTypes.Add(entity);
+                Save();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
+
+        public ProductType GetProductTypeByName(string name)
+        {
+            return _context.ProductTypes.FirstOrDefault(p => p.Type == name);
+        }
+
+        //public bool Delete(int id)
+        //{
+        //    var type = Context.ProductTypes.FirstOrDefault(x => x.Id == id);
+
+        //    if (type != null)
+        //    {
+        //        Context.Entry(type).State = EntityState.Modified;
+        //        Context.ProductTypes.Remove(type);
+        //        Context.SaveChanges();
+
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+
+        //}
+
+        //public bool Update(ProductType originalType, ProductType updatedType)
+        //{
+        //    Context.Entry(originalType).CurrentValues.SetValues(updatedType);
+        //    return true;
+        //}
+
+        //private LicensingContext _ctx;
+
+  
+
+        public bool Delete(ProductType entity)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

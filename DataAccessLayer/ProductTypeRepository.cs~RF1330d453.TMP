@@ -1,0 +1,94 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+    public class ProductTypeRepository : GenericRepository<LicensingContext, ProductType>, IProductTypeRepository
+    {
+              
+        //GET: api/ProductType
+        public IEnumerable<ProductType> GetProductTypes()
+        {
+            var allTypes = GetAll();
+            return allTypes.ToList();
+        } 
+
+
+        //public virtual ProductType GetProductTypeById(int id)
+        //{
+        //    var query = Context.ProductTypes.FirstOrDefault(x => x.Id == id);
+
+        //    return query;
+        //}
+
+        public ProductType GetById(int id)
+        {
+            return Context.ProductTypes.Find(id);
+        }
+
+
+        public virtual bool Insert(ProductType productType)
+        {
+
+            Context.ProductTypes.Add(productType);
+            Context.SaveChanges();
+
+            return true;
+        }
+
+        public bool Update(ProductType type)
+        {
+            Context.Entry(type).State = EntityState.Modified;
+            Context.ProductTypes.Attach(type);
+            Context.SaveChanges();
+            return true;
+        }
+
+        public bool Delete(int id)
+        {
+            var type = Context.ProductTypes.FirstOrDefault(x => x.Id == id);
+
+            if (type != null)
+            {
+                Context.Entry(type).State = EntityState.Modified;
+                Context.ProductTypes.Remove(type);
+                Context.SaveChanges();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }  
+
+        //public bool Update(ProductType originalType, ProductType updatedType)
+        //{
+        //    Context.Entry(originalType).CurrentValues.SetValues(updatedType);
+        //    return true;
+        //}
+
+        //private LicensingContext _ctx;
+
+        //public ProductTypeRepository(LicensingContext ctx)
+        //{
+        //    _ctx = ctx;
+        //}
+
+
+        //public IEnumerable<ProductType> GetAll()
+        //{
+        //    IEnumerable<ProductType> query = _ctx.Set<ProductType>();
+        //    return query;
+        //}
+    }
+}

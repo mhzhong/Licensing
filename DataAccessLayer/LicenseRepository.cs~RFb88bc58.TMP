@@ -1,0 +1,113 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using DataLayer.Entities;
+
+
+namespace DataAccessLayer
+{
+
+    public class LicenseRepository: GenericRepository<LicensingContext, License>, ILicenseRepository
+    {
+        
+
+        public virtual IEnumerable<License> GetLicensesByProductTypeId(int productTypeId)
+        {
+            var query = from l in Context.Licenses
+                join p in Context.ProductTypes on l.ProductTypeId equals p.Id
+                select l;
+
+            return query.ToList();
+            //var licenses = 
+            //    (from x in Context.Licenses
+            //    where x.ProductTypeId == id
+            //    select x).ToList();
+
+            //return licenses;
+
+            //return Context.Licenses.Where(x => x.ProductTypeId == id).AsQueryable();
+        }
+
+        
+        public DataLayer.Entities.License GetLicenseByName(string name)
+        {
+            return Context.Licenses.Find(name);
+        }
+
+
+        public IEnumerable<License> GetAll()
+        {
+           // return Context.Licenses.AsEnumerable();
+            //return Context.Licenses.
+            //    Include("ProductFamily")
+            //    .Include("Subscription")
+            //    .Include("Version")
+            //    .Include("Application")
+            //    .Include("ProductType")
+            //    .Include("Authorization")
+            //    .Where(l=>l.ProdFamilyId == ProductFamily.Id)
+
+            var query = from l in Context.Licenses
+                            join pf in Context.ProductFamilys on l.ProdFamilyId equals pf.Id
+                            join s in Context.Subscriptions on l.SubscriptionId equals s.Id
+                            join v in Context.SoftwareVersions on l.VersionId equals v.Id
+                            join a in Context.Applications on l.ApplicationId equals a.Id
+                            select l;
+            return query.ToList();
+        }
+
+        public License GetById(int id)
+        {
+            //return Context.Licenses.FirstOrDefault(c => c.Id == id);
+            var query = from l in Context.Licenses
+                        join pf in Context.ProductFamilys on l.ProdFamilyId equals pf.Id
+                        join s in Context.Subscriptions on l.SubscriptionId equals s.Id
+                        join v in Context.SoftwareVersions on l.VersionId equals v.Id
+                        join a in Context.Applications on l.ApplicationId equals a.Id
+                        where l.Id == id
+                        select l;
+
+            return query.FirstOrDefault();
+        }
+
+        //public IEnumerable<DataLayer.Entities.License> GetBy(System.Linq.Expressions.Expression<Func<DataLayer.Entities.License, bool>> predicate)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public bool Insert(License newLicense)
+        {
+
+            Context.Entry(newLicense).State = EntityState.Modified;
+            Context.Licenses.Add(newLicense);
+
+            if (Context.SaveChanges() > 0)
+            {
+                return true;
+            }
+
+            return true;
+           
+        }
+
+
+        public bool Update(License updatedLicense)
+        {
+            
+            Context.Entry(updatedLicense).State = EntityState.Modified;
+            Context.Licenses.Attach(updatedLicense);
+            Context.SaveChanges();
+            return true;
+
+        }
+    }
+
+}

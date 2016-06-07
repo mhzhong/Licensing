@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using DataLayer.Enums;
+using Moq;
+using NUnit.Framework;
+
+namespace WebAPIControllerTest
+{
+    [TestFixture]
+    public class ControllerTest
+    {
+        private Mock<IActivationRepository> _mockActivationRepo;
+        private IActivationRepository MockActivationRepo;
+
+        private IList<Activation> activations; 
+
+        [SetUp]
+        public void SetUp()
+        {
+            _mockActivationRepo = new Mock<IActivationRepository>();
+            this.MockActivationRepo = _mockActivationRepo.Object;
+
+            activations = new List<Activation>()
+            {
+                new Activation(){Key = "D41A91DB6285B0048F923C00C1F4754FFD42D257", Status = Status.Activated, MachineIdentifier = "0010000A4195CEC8", 
+                                  BegEffDate = DateTime.Now, EndEffDate  = DateTime.Now.AddYears(1), 
+                                 AuthorizationId = 1
+                                
+                                }
+                
+            };
+        }
+
+        [Test]
+        public void Can_Create_Save_Activation_Test()
+        {
+            Activation a = new Activation()
+            {
+                Key = "37E518DB9418A8CE4C89792E4C80D6F0776CBC01",
+                Status = Status.Activated,
+                MachineIdentifier = "001b38363798 001b7791c2dc",
+                BegEffDate = DateTime.Now,
+                EndEffDate = DateTime.Now.AddYears(1),
+                AuthorizationId = 1
+            };
+        }
+    }
+}

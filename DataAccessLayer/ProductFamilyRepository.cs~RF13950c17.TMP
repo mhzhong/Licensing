@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+
+namespace DataAccessLayer
+{
+    public class ProductFamilyRepository: GenericRepository<LicensingContext, ProductFamily>, IProductFamilyRepository
+    {
+        public bool Insert(ProductFamily prodFamily)
+        {
+            Context.Entry(prodFamily).State = EntityState.Modified;
+            Context.ProductFamilys.Add(prodFamily);
+            if (Context.SaveChanges() > 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool Delete(int id)
+        {
+            var prodFam = Context.ProductFamilys.FirstOrDefault(x => x.Id == id);
+            if (prodFam != null)
+            {
+                Context.Entry(prodFam).State = EntityState.Modified;
+                Context.ProductFamilys.Remove(prodFam);
+                Context.SaveChanges();
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}

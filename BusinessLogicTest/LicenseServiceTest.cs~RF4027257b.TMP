@@ -1,0 +1,51 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DataLayer.Entities;
+using DataAccessLayer.Interface;
+using DataAccessLayer;
+
+
+namespace BusinessLogicTest
+{
+    [TestClass]
+    public class LicenseServiceTest
+    {
+        private ILicenseRepository _licenseRepository;
+    
+    
+        [TestInitialize]
+        public void Innitialise()
+        {
+            _licenseRepository = new LicenseRepository();
+        }
+
+        [TestMethod]
+        public void Query_AllLicense_NoException()
+        {
+            var list = _licenseRepository.GetAll();
+
+            
+        
+        }
+
+        [TestMethod]
+        public void CreateLicenseTest()
+        {
+            var _newLicense = new License()
+            {
+                Name = "CDR V6.0, 1 Year Subscription",
+                Description = "1 Year Subscription, CDR",
+                TitleOfHardware = "CDR Vehicle Interface Module",
+                LicenseType = DataLayer.Enums.LicenseType.Subscription,
+                Duration = 1,
+                DateCreated = DateTime.Now,
+                DateUpdated = DateTime.Now,
+                Status = DataLayer.Enums.Status.Pending,
+                ProdFamily = { }
+
+
+            };
+
+        }
+    }
+}

@@ -1,0 +1,176 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using DataAccessLayer;
+using DataLayer;
+using DataLayer.Enums;
+using Moq;
+
+namespace BusinessLogicTest
+{
+    /// <summary>
+    /// Summary description for ProductTypeServiceTest
+    /// </summary>
+    [TestClass]
+    public class ProductTypeServiceTest
+    {
+        public readonly IProductTypeRepository MockProductTypeRepo;
+        
+        //constructor
+        public ProductTypeServiceTest()
+        {
+            //create mock data
+            List<ProductType> types = new List<ProductType>()
+            {
+                new ProductType{ Id = 1, Type = "BVMS"},
+                new ProductType{ Id = 2, Type = "CDR"}
+            };
+            
+            //mock the product type repository using Moq
+            Mock<IProductTypeRepository> mockProductTypeRepo = new Mock<IProductTypeRepository>();
+
+            //return product type by id
+            mockProductTypeRepo.Setup(mp => mp.GetProductTypeById(It.IsAny<int>())).Returns((int i) => types.Where(x => x.Id == i).Single());
+
+            //return new added product type
+            mockProductTypeRepo.Setup(mp => mp.Insert(It.IsAny<ProductType>())).Returns(
+                (ProductType target) =>
+                {
+                    if (target.Id.Equals(default(int)))
+                    {
+                        target.Id = types.Count() + 1;
+                        target.Type = "VCI";
+                        types.Insert(target);
+                    }
+                    else
+                    {
+                        var original = types.Where(q => q.Id == target.Id).Single();
+
+                        if (original == null)
+                        {
+                            return false;
+                        }
+                    }
+                    
+                }
+
+                )
+            //access mock instance
+            this.MockProductTypeRepo = mockProductTypeRepo.Object;
+        }
+
+
+
+        [TestMethod]
+        public void CreateProductTypeTest()
+        {
+
+            objProdTypeRepo.Setup(x => x.Insert(It.IsAny<ProductType>())).Returns(true);
+
+            var obj = new ProductType()
+            {
+                Id = 1,
+                Type = "BVMS"
+            };
+
+            bool id = objProdTypeRepo.Object.Insert(obj);
+
+            Assert.AreEqual(true, id);
+
+        }
+
+        [TestMethod]
+        public void GetProductTypeById_ReturnProductType()
+        {
+            ProductType testProductType = this.MockProductTypeRepo.GetProductTypeById(2);
+
+            Assert.IsNotNull(testProductType);
+            Assert.IsInstanceOfType(testProductType, typeof(ProductType));
+            Assert.AreEqual("CDR", testProductType.Type);
+        }
+
+
+        //private IProductTypeRepository prodTypeRepoMock;
+        //private LicensingContext ctx;
+
+        //private ProductType typeOne = new ProductType()
+        //{
+        //    Id = 1,
+        //    Type = "BVMS"
+        //};
+
+        //private List<ProductType> prodTypeList = new List<ProductType>();
+
+       
+        //[TestInitialize]
+        //public void Initialize()
+        //{
+        //   prodTypeRepoMock = new ProductTypeRepository();
+           
+        //   ctx = new LicensingContext();
+
+        //   prodTypeList.Add(typeOne);
+        //   prodTypeRepoMock = new ProductTypeRepository(typeof(IProductTypeRepository));
+        //}
+
+
+        
+
+        //#region Additional test attributes
+        ////
+        //// You can use the following additional attributes as you write your tests:
+        ////
+        //// Use ClassInitialize to run code before running the first test in the class
+        //// [ClassInitialize()]
+        //// public static void MyClassInitialize(TestContext testContext) { }
+        ////
+        //// Use ClassCleanup to run code after all tests in a class have run
+        //// [ClassCleanup()]
+        //// public static void MyClassCleanup() { }
+        ////
+        //// Use TestInitialize to run code before running each test 
+        //// [TestInitialize()]
+        //// public void MyTestInitialize() { }
+        ////
+        //// Use TestCleanup to run code after each test has run
+        //// [TestCleanup()]
+        //// public void MyTestCleanup() { }
+        ////
+        //#endregion
+
+        //[TestMethod]
+        //public void TestGetAllProductType()
+        //{
+        //    ProductTypeRepository prodTypeRepo = new ProductTypeRepository((IProductTypeRepository)prodTypeRepoMock.MockInstance);
+        //    ;
+        //}
+        
+        //[TestMethod]
+        //public void Get_SingleProductType_IsNullAnException()
+        //{
+        //    var product = prodTypeRepoMock.GetProductTypeById(1);
+        //    Assert.AreEqual(product.Type, "CDR");
+
+        //}
+
+        //[TestMethod]
+        //public void Add_ProductType_IsNullAnException()
+        //{
+        //    Mock<ProductType> objProdType = new Mock<ProductType>();
+
+            //objProdType.Setup(x=>x.)
+            //var type = new ProductType()
+            //{
+            //    Id = 1,
+            //    Type = "CDR"
+            //};
+
+            //prodTypeRepo.Insert(type);
+            //Assert.AreNotEqual(null, "CDR");
+        //}
+    }
+}

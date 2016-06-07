@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using DataAccessLayer.Interface;
+
+namespace WebApi.Controllers
+{
+    public class BaseApiController : ApiController
+    {
+        public ILicenseRepository _theLicenseRepo;
+        private IProductTypeRepository _theProductTypeRepo;
+
+              
+        public BaseApiController(ILicenseRepository licenseRepo)
+        {
+            _theLicenseRepo = licenseRepo;
+        }
+
+        public BaseApiController(IProductTypeRepository productTypeRepo)
+        {
+            _theProductTypeRepo = productTypeRepo;
+        }
+
+        public ILicenseRepository TheLicenseRepo
+        {
+            get { return _theLicenseRepo; }
+
+        }
+
+        public IProductTypeRepository TheProductTypeRepo
+        {
+            get { return _theProductTypeRepo; }
+        }
+    }
+}

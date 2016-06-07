@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Entities
+{
+    public class Order
+    {
+        public int Id { get; set; }
+        public String OrderNumber { get; set; }
+        //public int Qty { get; set; }
+        public DateTime DatePlacedOrder { get; set; }
+        public Enums.Status Status { get; set; }
+        public decimal Total { get; set; }
+    }
+}

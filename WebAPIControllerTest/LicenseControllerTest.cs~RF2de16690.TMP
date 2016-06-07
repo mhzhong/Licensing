@@ -1,0 +1,89 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApi.Controllers;
+using System.Web.Http;
+using DataAccessLayer;
+using DataAccessLayer.Interface;
+using DataLayer;
+using NUnit.Framework;
+//using TestContext = Microsoft.VisualStudio.TestTools.UnitTesting.TestContext;
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// NUnit test cases for LicenseControllerTest
+    /// </summary>
+    [TestFixture]
+    public class LicenseControllerTest
+    {
+        private LicenseController _licenseController;
+        private ILicenseRepository _licenserepository;
+
+        private int count;
+        private int licenseId;
+
+        //private TestContext testContextInstance;
+
+        ///// <summary>
+        /////Gets or sets the test context which provides
+        /////information about and functionality for the current test run.
+        /////</summary>
+        //public TestContext TestContext
+        //{
+        //    get
+        //    {
+        //        return testContextInstance;
+        //    }
+        //    set
+        //    {
+        //        testContextInstance = value;
+        //    }
+        //}
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        [SetUp]
+        public void Setup()
+        {
+            //Create an instance of licenseRepository
+            _licenserepository = new LicenseRepository();
+
+            //Create an instance of licenseController
+            _licenseController = new LicenseController(_licenserepository);
+
+            //Number of records
+            count = _licenseController.Get().Count();
+
+            //licenseId = _licenserepository.GetById(1).LicenseType;
+        }
+
+        [Test]
+        public void GetAllLicenseTest()
+        {
+            NUnit.Framework.Assert.AreEqual(4, count);
+        }
+    }
+}

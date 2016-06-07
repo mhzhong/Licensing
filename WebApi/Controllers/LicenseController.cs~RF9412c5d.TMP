@@ -1,0 +1,170 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Runtime.CompilerServices;
+using System.Web.Http;
+using DataAccessLayer;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+using Ninject.Infrastructure.Language;
+
+namespace WebApi.Controllers
+{
+    public class LicenseController : BaseApiController //: ApiController
+    {
+        //private readonly ILicenseRepository _licenseRepo;
+
+
+        //public LicenseController()
+        //{
+        //    this._licenseRepo = new LicenseRepository();
+        //}
+
+        //public LicenseController(ILicenseRepository licenseRepo)
+        //{
+            
+        //    this._licenseRepo = licenseRepo;
+        //}
+
+
+        public LicenseController(ILicenseRepository repo) : base(repo)
+        {
+            
+        }
+
+
+        //GET api/License
+        public HttpResponseMessage Get()
+        {
+            var allLicenses = _theLicenseRepo.GetAll();
+            return Request.CreateResponse(HttpStatusCode.OK, allLicenses);           
+       
+        }
+
+        //GET api/License/2
+        public HttpResponseMessage Get(int id)
+        {
+            var license = _theLicenseRepo.GetById(id);
+
+            try
+            {
+                if (license == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, license);
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        public HttpResponseMessage GetLicensesByProductTypeId(int id)
+        {
+            var license = _theLicenseRepo.GetLicensesByProductTypeId(id);
+
+            try
+            {
+                if (license == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, license);
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+        
+
+        //POST api/License
+        public HttpResponseMessage Post([FromBody] License license)
+        {
+            try
+            {
+                _theLicenseRepo.Insert(license);
+
+                return Request.CreateResponse(HttpStatusCode.Created, TheModelFactory.Create(license));
+            }
+            catch (Exception ex)
+            {
+
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+
+        //PUT api/License/2
+        public HttpResponseMessage PUT(int id, [FromBody] License license)
+        {
+            try
+            {
+                var targetLicense = _theLicenseRepo.GetById(id);
+
+                if (targetLicense != null && targetLicense.Id == id)
+                {
+                    targetLicense.Name = license.Name;
+                    targetLicense.Description = license.Description;
+                    targetLicense.TitleOfHardware = license.TitleOfHardware;
+                    targetLicense.LicenseType = license.LicenseType;
+                    targetLicense.Duration = license.Duration;
+                    targetLicense.DateCreated = license.DateCreated;
+                    targetLicense.DateUpdated = license.DateUpdated;
+                    targetLicense.Status = license.Status;
+                    targetLicense.ProdFamilyId = license.ProdFamilyId;
+                    targetLicense.SubscriptionId = license.SubscriptionId;
+                    targetLicense.VersionId = license.VersionId;
+                    targetLicense.ApplicationId = license.ApplicationId;
+                    targetLicense.ProductTypeId = license.ProductTypeId;
+
+                    _theLicenseRepo.Update(license);
+                    return Request.CreateResponse(HttpStatusCode.OK);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotModified, "Not found the license.");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        //public HttpResponseMessage Delete(int id)
+        //{
+        //    try
+        //    {
+        //        var license = _theLicenseRepo.GetById(id);
+
+        //        if (license == null)
+        //        {
+        //            return Request.CreateResponse(HttpStatusCode.NotFound);
+        //        }
+
+
+        //    }
+        //    catch (Exception)
+        //    {
+                
+        //        throw;
+        //    }
+        //}
+
+       
+    }
+}

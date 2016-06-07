@@ -1,0 +1,29 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+    public class LicenseRepository: ILicenseRepository, GenericRepository<License>
+    {
+        public LicenseRepository(LicensingContext context)
+        {
+
+        }
+        
+        
+        public LicensingContext LicensingContext
+        {
+            //get
+            //{
+            //    //return Context as LicensingContext;
+            //}
+
+        }
+    }
+}

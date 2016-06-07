@@ -1,0 +1,25 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DataLayer.Entities;
+using DataAccessLayer.Interface;
+
+
+namespace BusinessLogicTest
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        private ILicenseRepository _licenserepo;
+        [TestMethod]
+        public void Query_AllLicense_NoException()
+        {
+            var list = _repository.All(License)().ToList();
+
+            foreach (var license in License)
+            {
+                
+            }
+        
+        }
+    }
+}

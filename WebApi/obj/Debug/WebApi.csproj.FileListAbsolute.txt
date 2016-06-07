@@ -1,0 +1,439 @@
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebApi.dll.config
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebApi.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebApi.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Antlr3.Runtime.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\DataAccessLayer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\DataLayer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\EntityFramework.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Moq.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Spatial.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Optimization.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Providers.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Razor.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebActivatorEx.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebGrease.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\DataAccessLayer.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\DataLayer.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\EntityFramework.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Moq.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Razor.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\System.Spatial.xml
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\de\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\es\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\fr\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\it\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ja\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ko\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\ru\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\obj\Debug\WebApi.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\obj\Debug\WebApi.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebApi.dll.config
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebApi.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebApi.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Antlr3.Runtime.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\AutoMapper.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\DataAccessLayer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\DataLayer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\EntityFramework.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Moq.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Spatial.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Optimization.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Providers.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Razor.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebActivatorEx.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\WebGrease.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\DataAccessLayer.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\DataLayer.pdb
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\AutoMapper.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\EntityFramework.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Moq.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Razor.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\System.Spatial.xml
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\de\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\es\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\fr\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\it\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ja\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ko\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\ru\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\obj\Debug\WebApi.dll
+C:\Users\ZHM1MTP\Desktop\bk\RB.NA.Licensing\WebApi\obj\Debug\WebApi.pdb
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\AutoMapper.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\ZHM1MTP\Documents\Visual Studio 2013\Projects\RB.NA.Licensing\WebApi\bin\AutoMapper.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebApi.dll.config
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebApi.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebApi.pdb
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Antlr3.Runtime.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\AutoMapper.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\DataAccessLayer.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\DataLayer.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\EntityFramework.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Moq.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Spatial.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Optimization.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Providers.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Razor.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebActivatorEx.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebApiContrib.IoC.Ninject.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\WebGrease.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\DataAccessLayer.pdb
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\DataLayer.pdb
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\AutoMapper.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\EntityFramework.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Moq.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.Web.Common.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Ninject.Web.Mvc.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Newtonsoft.Json.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Net.Http.Formatting.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Helpers.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.WebHost.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Mvc.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Razor.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.Tracing.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Web.Http.OData.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Data.Edm.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\Microsoft.Data.OData.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\System.Spatial.xml
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\de\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\es\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\it\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\de\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\es\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\fr\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\it\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ja\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ko\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\ru\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hans\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\bin\zh-Hant\System.Spatial.resources.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\obj\Debug\WebApi.dll
+D:\Visual Studio 2013\Project\RB.NA.Licensing\RB.NA.Licensing\WebApi\obj\Debug\WebApi.pdb
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.dll.config
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.pdb
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Antlr3.Runtime.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\AutoMapper.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\DataAccessLayer.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\DataLayer.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.SqlServer.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.Edm.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.OData.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Moq.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Newtonsoft.Json.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Common.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Mvc.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Net.Http.Formatting.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Spatial.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Helpers.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.OData.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.Tracing.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.WebHost.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Mvc.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Optimization.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Providers.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Razor.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Deployment.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Razor.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebActivatorEx.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebApiContrib.IoC.Ninject.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\WebGrease.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\DataAccessLayer.pdb
+E:\SouceCode\Licensing\Licensing\WebApi\bin\DataLayer.pdb
+E:\SouceCode\Licensing\Licensing\WebApi\bin\AutoMapper.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.SqlServer.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Moq.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Common.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Mvc.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Newtonsoft.Json.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Net.Http.Formatting.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Helpers.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.WebHost.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Mvc.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Razor.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Deployment.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Razor.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.Tracing.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.OData.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.Edm.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.OData.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\System.Spatial.xml
+E:\SouceCode\Licensing\Licensing\WebApi\bin\de\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\es\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\it\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\de\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\es\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\fr\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\it\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ja\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ko\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ru\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\de\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\es\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\fr\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\it\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ja\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ko\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\ru\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\System.Spatial.resources.dll
+E:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+E:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.dll
+E:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.pdb
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.dll.config
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebApi.pdb
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Antlr3.Runtime.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\AutoMapper.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\DataAccessLayer.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\DataLayer.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.SqlServer.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.Edm.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.OData.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Web.Infrastructure.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Moq.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Newtonsoft.Json.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Common.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Mvc.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Spatial.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Helpers.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.OData.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.Tracing.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Mvc.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Optimization.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Providers.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Razor.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Deployment.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Razor.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebActivatorEx.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebApiContrib.IoC.Ninject.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\WebGrease.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\DataAccessLayer.pdb
+F:\SouceCode\Licensing\Licensing\WebApi\bin\DataLayer.pdb
+F:\SouceCode\Licensing\Licensing\WebApi\bin\AutoMapper.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\EntityFramework.SqlServer.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Moq.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Common.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Ninject.Web.Mvc.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Newtonsoft.Json.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Helpers.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Mvc.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Razor.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Deployment.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.WebPages.Razor.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.Tracing.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Web.Http.OData.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.Edm.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\Microsoft.Data.OData.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\System.Spatial.xml
+F:\SouceCode\Licensing\Licensing\WebApi\bin\de\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\es\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\it\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ja\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ko\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ru\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\de\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\es\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\fr\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\it\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ja\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ko\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ru\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\de\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\es\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\fr\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\it\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ja\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ko\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\ru\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hans\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\bin\zh-Hant\System.Spatial.resources.dll
+F:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+F:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.dll
+F:\SouceCode\Licensing\Licensing\WebApi\obj\Debug\WebApi.pdb

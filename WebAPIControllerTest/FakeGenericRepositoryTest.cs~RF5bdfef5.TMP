@@ -1,0 +1,181 @@
+﻿using System;
+using System.Text;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using DataAccessLayer;
+using DataAccessLayer.Interface;
+using DataLayer;
+using Moq;
+using Moq.Protected;
+using NUnit.Framework;
+using System.Linq.Expressions;
+using DataLayer.Entities;
+using NUnit.Framework.Constraints;
+using TestContext = NUnit.Framework.TestContext;
+
+namespace WebAPIControllerTest
+{
+    /// <summary>
+    /// Summary description for FakeGenericRepositoryTest
+    /// </summary>
+    [TestFixture]
+    //class FakeGenericRepositoryTest<FC, FE>
+    //    where FE : Mock<DbSet<FE>>
+    //    where FC : Mock<LicensingContext>, new()
+    //{
+    //    private FC fakeEntity = new FC();
+
+    //    protected FC fakeContext
+    //    {
+    //        get { return fakeEntity; }
+    //        set { fakeEntity = value; }
+    //    }
+
+    //    public virtual IEnumerable<FE> GetAll()
+    //    {
+    //        IEnumerable<FE> query = fakeEntity.Set<FE>().ToList();
+    //        return query;
+    //    }
+
+    //    public virtual FE GetById(int id)
+    //    {
+    //        FE query = fakeContext.Set<FE>().Find(id);
+    //        return query;
+    //    }
+
+    //    public IEnumerable<FE> GetBy(Expression<Func<FE, bool>> predicate)
+    //    {
+    //        IEnumerable<FE> query = fakeEntity.Set<FE>().Where(predicate);
+    //        return query;
+    //    }
+
+    //    public bool Insert(FE entity)
+    //    {
+
+    //        fakeEntity.Set<FE>().Add(entity);
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+
+    //    public bool Delete(FE entity)
+    //    {
+
+    //        fakeEntity.Set<FE>().Remove(entity);
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+    //    public bool Update(FE entity)
+    //    {
+    //        fakeEntity.Entry(entity).State = EntityState.Modified;
+    //        fakeEntity.SaveChanges();
+
+    //        return true;
+    //    }
+
+    //}
+
+
+    //private IGenericRepository<TE> CreateRepository<TE>(List<TE> data)
+                    //where TE : class
+                    //{
+                    //    var mock = new Mock<IGenericRepository<TE>>();
+            
+                    //    // all the mocking setup goes here ...
+
+                    //    // setup Add method
+                    //    mock.Setup(x => x.Insert(It.IsAny<TE>()))
+                    //        .Returns(new Func<TE, TE>(x =>
+                    //        {
+                    //            dynamic lastId = data.Last().
+                    //            dynamic nextId = lastId + 1;
+                    //            x.Id = nextId;
+                    //            data.Add(x);
+                    //            return data.Last();
+                    //        }));
+
+                    //    return mock.Object;
+                    //}
+
+        
+    public class FakeGenericRepositoryTest
+    {
+        private GenericRepository<TK, TE> CreateRepository<TK, TE>(List<TE> data)
+            where TE : Mock<DbSet<TE>>
+            where TK : Mock<LicensingContext>, new()
+                {
+                    TK _entities = new TK();
+
+                    var mock = new Mock<GenericRepository<TK, TE>>();
+
+                    // all the mocking setup goes here ...
+                    _mockSet = new Mock<DbSet<ProductType>>();
+                    var mockContext = new Mock<LicensingContext>();
+
+                    return mock.Object;
+                }
+
+        private Mock<DbSet<ProductType>> _mockSet;
+        private Mock<LicensingContext> _mockContext;
+
+        public FakeGenericRepositoryTest()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        private TestContext testContextInstance;
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+        #region Additional test attributes
+        //
+        // You can use the following additional attributes as you write your tests:
+        //
+        // Use ClassInitialize to run code before running the first test in the class
+        // [ClassInitialize()]
+        // public static void MyClassInitialize(TestContext testContext) { }
+        //
+        // Use ClassCleanup to run code after all tests in a class have run
+        // [ClassCleanup()]
+        // public static void MyClassCleanup() { }
+        //
+        // Use TestInitialize to run code before running each test 
+        // [TestInitialize()]
+        // public void MyTestInitialize() { }
+        //
+        // Use TestCleanup to run code after each test has run
+        // [TestCleanup()]
+        // public void MyTestCleanup() { }
+        //
+        #endregion
+
+        [Test]
+        public void TestMethod1()
+        {
+            //
+            // TODO: Add test logic here
+            //
+        }
+
+    }
+}

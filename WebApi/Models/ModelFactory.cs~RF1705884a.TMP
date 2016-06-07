@@ -1,0 +1,108 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http.Routing;
+using DataAccessLayer.Interface;
+using DataLayer.Entities;
+
+namespace WebApi.Models
+{
+    public class ModelFactory
+    {
+        private UrlHelper _urlHelper;
+        private ILicenseRepository _ilicenseRepo;
+        private IProductTypeRepository _iproductTypeRepo;
+        private IAuthorizationRepository _iauthorizationRepo;
+        private IProductFamilyRepository _iprodFamilyRepo;
+        private IActivationRepository _iactivationRepo;
+
+        public ModelFactory(HttpRequestMessage request, ILicenseRepository repo )
+        {
+            _ilicenseRepo = repo;
+            _urlHelper = new UrlHelper(request);
+
+        }
+
+        public ModelFactory(HttpRequestMessage request, IProductTypeRepository repo)
+        {
+            _iproductTypeRepo = repo;
+            _urlHelper = new UrlHelper(request);
+
+        }
+
+        public ModelFactory(HttpRequestMessage request, IAuthorizationRepository repo)
+        {
+            _iauthorizationRepo = repo;
+            _urlHelper = new UrlHelper(request);
+
+        }
+
+        public ModelFactory(HttpRequestMessage request, IProductFamilyRepository repo)
+        {
+            _iprodFamilyRepo = repo;
+            _urlHelper = new UrlHelper(request);
+        }
+
+        public ModelFactory(HttpRequestMessage request, IActivationRepository repo)
+        {
+            _iactivationRepo = repo;
+            _urlHelper = new UrlHelper(request);
+        }
+
+        public LicenseModel Create(License license)
+        {
+            return new LicenseModel()
+            {
+                Name = license.Name,
+                Description = license.Description,
+                TitleOfHardware = license.TitleOfHardware,
+                LicenseType = license.LicenseType,
+                Duration = license.Duration,
+                //DateCreated = DateTime.Now,
+                DateUpdated = DateTime.Now,
+                Status = license.Status
+                
+            };
+        }
+
+        public ProductTypeModel Create(ProductType type)
+        {
+            return new ProductTypeModel()
+            {
+                //Id = type.Id,
+                Type = type.Type
+            };
+        }
+
+        public AuthorizationModel Create(Authorization authourization)
+        {
+            return new AuthorizationModel()
+            {
+                Key = authourization.Key,
+                Status = authourization.Status,
+                DateCreated = DateTime.Now,
+                LicenseId = authourization.LicenseId,
+                OrderId = authourization.OrderId
+            };
+        }
+
+        public ProductFamilyModel Create(ProductFamily prodFamily)
+        {
+            return new ProductFamilyModel()
+            {
+                Id = prodFamily.Id,
+                Name = prodFamily.Name,
+                Description = prodFamily.Description,
+                DateCeated = prodFamily.DateCreated,
+                DateUpdated = prodFamily.DateUpdated
+            };
+        }
+
+        public ActivationModel Create(Activation activation)
+        {
+            
+        }
+    }
+}

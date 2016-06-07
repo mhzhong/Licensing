@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Entities
+{
+    public class Authorization
+    {
+        public Authorization()
+        {
+            LicenseId = new License();
+            ProductFamilyId = new ProductFamily();
+            OrderId = new Order();
+        }
+
+        public int AuthorizationId { get; set; }
+
+        public License LicenseId { get; set; }
+        public ProductFamily ProductFamilyId { get; set; }
+        public String AuthorizationKey { get; set; }
+        public Enums.Status Status{ get; set; }
+        public int Quantity { get; set; }
+        public DateTime DateCreated { get; set; }
+        public Order OrderId { get; set; }
+    }
+}

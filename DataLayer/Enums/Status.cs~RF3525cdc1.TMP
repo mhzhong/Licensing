@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Enums
+{
+    public enum Status
+    {
+       //License Status
+        Valid,
+        Invalid,
+        
+        //Authorization Status
+        Authorized
+        IsActivated,
+        Expired,
+        
+        //Activation Status
+        IsValid,
+        IsExpired,
+
+        //Order Status
+        Pending,
+        Completed       
+    }
+}

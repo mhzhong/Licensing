@@ -1,0 +1,78 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using DataLayer.Entities;
+
+
+namespace DataAccessLayer
+{
+
+    public class LicenseRepository: GenericRepository<License>, ILicenseRepository
+    {
+         private LicensingContext _context;
+
+         public LicenseRepository(LicensingContext context)
+            : base(context)
+        {
+            _context = context;
+        }
+
+        public LicensingContext Context
+        {
+            set { _context = value; }
+        }
+
+
+        //public virtual IEnumerable<License> GetLicensesByProductTypeId(int productTypeId)
+        //{
+        //    var query = from l in Context.Licenses
+        //        join p in Context.ProductTypes on l.ProductTypeId equals p.Id
+        //        select l;
+
+        //    return query.ToList();
+        //    //var licenses = 
+        //    //    (from x in Context.Licenses
+        //    //    where x.ProductTypeId == id
+        //    //    select x).ToList();
+
+        //    //return licenses;
+
+        //    //return Context.Licenses.Where(x => x.ProductTypeId == id).AsQueryable();
+        //}
+
+        
+        //public DataLayer.Entities.License GetLicenseByName(string name)
+        //{
+        //    return Context.Licenses.Find(name);
+        //}
+
+
+
+        ////public IEnumerable<DataLayer.Entities.License> GetBy(System.Linq.Expressions.Expression<Func<DataLayer.Entities.License, bool>> predicate)
+        ////{
+        ////    throw new NotImplementedException();
+        ////}
+
+        
+        public IEnumerable<License> GetLicensesByProductTypeId(int id)
+        {
+            var query = from x in _context.Licenses where x.Id == id select x;
+            return query.ToList();
+        }
+
+        public License GetLicenseByName(string name)
+        {
+            var query = from x in _c.Licenses where x.Name == name select x;
+            return query.FirstOrDefault();
+        }
+    }
+
+}

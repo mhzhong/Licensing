@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using DataAccessLayer.Interface;
+
+namespace WebApi.Controllers
+{
+    public class ActivationController : BaseApiController
+    {
+        public ActivationController(IActivationRepository repo) : base(repo);
+        {
+            
+        }
+        
+        // GET: /Activation/
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+    }
+}

@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+
+namespace DataAccessLayer
+{
+    public class AuthorizationRepository : GenericRepository< Authorization>, IAuthorizationRepository
+    {
+        public IEnumerable<Authorization> GetAll()
+        {
+            var query = from a in Context.Authorizations select a;
+
+            return query.ToList();
+        }
+
+        public Authorization GetById(int id)
+        {
+            var query = from a in Context.Authorizations where a.Id == id select a;
+
+            return query.FirstOrDefault();
+        }
+
+        public Authorization GetAuthorizationByLicenseId(int id)
+        {
+            var query = Context.Authorizations.FirstOrDefault(x => x.LicenseId == id);
+            return query;
+        }
+
+
+        public Authorization GetAuthorizationByOrderId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Insert(Authorization authorization)
+        {
+            Context.Entry(authorization).State = EntityState.Modified;
+            Context.Authorizations.Add(authorization);
+
+            if (Context.SaveChanges() > 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+    }
+}

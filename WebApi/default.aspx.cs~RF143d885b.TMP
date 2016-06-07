@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using DataAccessLayer;
+using DataLayer;
+using DataLayer.Entities;
+
+namespace WebApi
+{
+    public partial class _default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //mock data for license entity
+            IList<License> licenses = new List<License>()
+            {
+                new License { Id = 1, Name = "BVMS Lite-64 edition v2.0", Description = "this is a test.", TitleOfHardware = "Computer Signature", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.IsValid, ProdFamilyId = 1, SubscriptionId = 1, VersionId = 1, ApplicationId = 1, ProductTypeId = 1},
+                new License { Id = 2, Name = "BVMS 2 Camera Extension", Description = "test test test.", TitleOfHardware = "Computer Signature", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.Invalid, ProdFamilyId = 1, SubscriptionId = 1, VersionId = 2, ApplicationId = 1, ProductTypeId = 1},
+                new License { Id = 3, Name = "CDR V3.6, 1 Year Subscription", Description = "this is for VLMS.", TitleOfHardware = "CDR Vehicle Interface Module", 
+                    LicenseType = DataLayer.Enums.LicenseType.Subscription, Duration = 1, DateCreated = DateTime.Now, DateUpdated = DateTime.Now, Status = DataLayer.Enums.Status.IsValid, ProdFamilyId = 10, SubscriptionId = 1, VersionId = 6, ApplicationId = 2, ProductTypeId = 2}
+            };
+
+            LicensingContext lisense = new LicensingContext();
+            lisense.Licenses.AddRange(licenses);
+
+            
+
+            LicenseRepository d = new LicenseRepository();
+            var testdata =  d.GetLicensesByProductTypeId(1);
+
+        }
+    }
+}

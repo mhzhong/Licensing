@@ -1,0 +1,23 @@
+﻿using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataLayer.Mappers
+{
+    class LicenseMapper
+    {
+         
+        public LicenseMapper(EntityTypeConfiguration<License> License)
+        {
+            License.HasKey(l => l.LicenseId);
+            License.Property(l => l.LicenseId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            License.Property(l => l.LicenseId).IsRequired();
+            
+        }
+    }
+}

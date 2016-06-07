@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+
+namespace DataAccessLayer
+{
+    class ActivationRepository : GenericRepository<LicensingContext,Activation>, IActivationRepository
+    {
+        public Activation GetAuthorizationByActivationKey(string activationKey)
+        {
+            var query = from a in Context.Authorizations where a.Activation.Key == activationKey select a;
+
+            return query;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+
+namespace DataAccessLayer
+{
+    public class ApplicationRepository : GenericRepository<LicensingContext, Application>, IApplicationRepository
+    {
+        public IEnumerable<Application> GetAll()
+        {
+            //return Context.Applications.Include("Licenses").AsEnumerable();
+            var query = from a in Context.Applications select a;
+            return query.ToList();
+        } 
+    }
+}

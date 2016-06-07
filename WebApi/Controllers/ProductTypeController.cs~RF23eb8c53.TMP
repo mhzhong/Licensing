@@ -1,0 +1,63 @@
+﻿using DataAccessLayer.Interface;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using DataAccessLayer;
+using DataLayer.Entities;
+using WebApi.Models;
+
+namespace WebApi.Controllers
+{
+    public class ProductTypeController : ApiController
+    {
+        private readonly IProductTypeRepository _prodTypeRepo;
+        private ProductTypeModel _productTypeRepo;
+
+        /// <summary>
+        /// Public constructor to initialize ProductType repository instance
+        /// </summary>
+        public ProductTypeController()
+        {
+            _prodTypeRepo = new ProductTypeRepository();
+        }
+
+        public ProductTypeController(IProductTypeRepository prodTypeRepo, ProductTypeModel productTypeModel)
+        {
+            _prodTypeRepo = prodTypeRepo;
+            _productTypeRepo = productTypeModel;
+        }
+
+        // GET api/ProductType
+        public IEnumerable<ProductType> Get()
+        {
+            var allTypes = _prodTypeRepo.GetAll();
+            return allTypes;
+        }
+
+        // GET api/ProductType/2
+        public HttpResponseMessage Get(int id)
+        {
+            var type = _prodTypeRepo.GetById(id);
+
+            if (type == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, type);
+            }
+        }
+
+        //public HttpResponseMessage Get(int id)
+        //{
+        //    return Request.CreateResponse(HttpStatusCode.OK, TheModelFactory.Create(ProductType));
+        //}
+
+    }
+}

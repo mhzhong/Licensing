@@ -1,0 +1,49 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using DataLayer.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+    public class ProductTypeRepository: GenericRepository<LicensingContext, ProductType>, IProductTypeRepository
+    {
+
+        public virtual ProductType GetProductTypeById(int id)
+        {
+            var query = Context.ProductTypes.FirstOrDefault(x => x.Id == id);
+
+            return query;
+        }
+
+        public virtual void Insert(ProductType productType)
+        {
+            
+            Context.ProductTypes.Add(productType);
+            Context.SaveChanges();
+        }
+
+
+        //private LicensingContext _ctx;
+
+        //public ProductTypeRepository(LicensingContext ctx)
+        //{
+        //    _ctx = ctx;
+        //}
+
+        //public void Insert(ProductType productType)
+        //{
+        //    _ctx.Set<ProductType>().Add(productType);
+        //}
+
+
+        //public IEnumerable<ProductType> GetAll()
+        //{
+        //    IEnumerable<ProductType> query = _ctx.Set<ProductType>();
+        //    return query;
+        //}
+    }
+}

@@ -1,0 +1,65 @@
+﻿using DataAccessLayer.Interface;
+using DataLayer;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer
+{
+    public class LicenseRepository: GenericRepository<LicensingContext,License>, ILicenseRepository
+    {
+        //public LicenseRepository(LicenseContext)
+        //{
+        //     context = new LicenseContext();
+        //}
+
+        public License GetLicenseById(int id)
+        {
+            return GetAll().FirstOrDefault(x => x.License.Id = id);
+           
+        }
+
+        public IEnumerable<DataLayer.Entities.License> GetLicenseByProductTypeId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public new IEnumerable<DataLayer.Entities.License> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public new DataLayer.Entities.License Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<DataLayer.Entities.License> FindBy(System.Linq.Expressions.Expression<Func<DataLayer.Entities.License, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(DataLayer.Entities.License entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddRange(IEnumerable<DataLayer.Entities.License> entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(DataLayer.Entities.License entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteRange(IEnumerable<DataLayer.Entities.License> entity)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
